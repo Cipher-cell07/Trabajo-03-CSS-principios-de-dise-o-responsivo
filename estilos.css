@@ -1,0 +1,75 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.maincontainer { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.tornado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blue {
+    background-image: url("Fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* .acomodo {
+    
+} */
+
+.acomodo h1{
+    color: white;
+}
+
+.social_media{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* .columnas {
+    
+}
+
+.columnas p {
+    
+} */
+
+@media (min-width: 1024px){
+    .maincontainer { 
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    .acomodo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .social_media{
+        margin-top: 15px;
+    }
+    
+    .columnas {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+    
+    .columnas p {
+        text-align: center;
+        color: white;
+    }
+} /*ctrl kc */
